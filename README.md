@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -44,3 +45,9 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+=======
+# Electron App with MUI v5 Library and Hot Reload
+A skeleton for electron apps using a react frontend. Includes hot reload functionality without ejecting for a prime developer experience (DX).
+
+Using mui v5 to support theming and customization. Default application includes light/dark theme toggling waiting for you to enable full customization.
+>>>>>>> e9f4c99e79e8c4b0b7d6cbb2ef0f417d01f574ad
