@@ -9,6 +9,11 @@ import {
 } from "react-router-dom";
 import routes from './routes'
 
+//once route components exist, lazy load them
+// requires component to be export default 
+//import like: const OtherComponent = React.lazy(() => import('./OtherComponent'));
+
+
 const App = () => {
   return (
     <div className="App">
