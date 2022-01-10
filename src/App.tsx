@@ -1,26 +1,38 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
+import routes from './routes'
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Test React
-        </a>
+      <header>
+        <MenuBar />
       </header>
+      <main>
+        <Routes>
+          <Route path='/' element={<div>hi</div>} />
+          Below you are seeing the terse route content, in actuality you should
+          {routes.map((route, index) => <Route key={`route-${route.title}-${index}`} path={route.path} element={route.component} />)}
+        </Routes>
+      </main>
     </div>
   );
 }
+
+const MenuBar = () => (
+  <nav>
+    <Link to="/">Home</Link>
+    <Link to="route1">Route 1</Link>
+    <Link to="route2">Route 2</Link>
+    <Link to="route3">Route 3</Link>
+  </nav>
+)
 
 export default App;
