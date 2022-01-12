@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.scss';
 import {
@@ -8,6 +8,7 @@ import {
   Link
 } from "react-router-dom";
 import routes from './routes'
+import { Login } from './components/Login/Login';
 
 //once route components exist, lazy load them
 // requires component to be export default 
@@ -15,6 +16,11 @@ import routes from './routes'
 
 
 const App = () => {
+  const [token, setToken] = useState('');
+  console.log(token)
+  if (!token) {
+    return <Login setToken={setToken} />
+  }
   return (
     <div className="App">
       <header>

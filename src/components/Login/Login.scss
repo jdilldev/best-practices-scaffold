@@ -1,0 +1,83 @@
+.login__container {
+	display: grid;
+	grid-template-areas: "image login";
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	height: 100vh;
+}
+
+.login__wrapper {
+	grid-area: login;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #28c8c034;
+}
+
+.login__wrapper > p {
+	color: gray;
+}
+
+label {
+	color: rgb(12, 130, 177);
+	font-weight: bold;
+}
+
+input {
+	width: 100%;
+	font-size: 1em;
+	font-family: "Avenir";
+}
+
+input:focus {
+	border-bottom: 2px solid #90e16e;
+}
+
+.login--image {
+	grid-area: image;
+	background-size: cover; /* <------ */
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url("../../images/fluid-background.svg");
+}
+
+.login--icon__container {
+	width: 50%;
+	display: flex;
+	justify-content: space-evenly;
+	//justify-content: space-around;
+	margin-top: 1em;
+}
+
+.login--icon:hover {
+	transform: scale(1.5);
+}
+
+.login--input {
+	border: 0;
+	outline: 0;
+	background: transparent;
+	border-bottom: 1px solid black;
+}
+
+.login--button {
+	color: white;
+	font-weight: bolder;
+	font-size: 1em;
+	border-radius: 0px;
+	background: rgb(43, 209, 197);
+	background: linear-gradient(
+		90deg,
+		rgba(43, 209, 197, 1) 0%,
+		rgba(144, 225, 110, 1) 100%,
+		rgba(4, 4, 3, 1) 100%
+	);
+	border: none;
+	box-shadow: none;
+	font-family: "Avenir";
+	width: 70%;
+	cursor: grab;
+	padding: 1em 0;
+	margin: 0.5em 0em;
+}
