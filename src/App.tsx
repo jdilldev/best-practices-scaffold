@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { Suspense, useState, lazy } from 'react';
 import logo from './logo.svg';
 import './App.scss';
 import {
@@ -8,18 +8,21 @@ import {
   Link
 } from "react-router-dom";
 import routes from './routes'
-import { Login } from './components/Login/Login';
+
+import loadable from '@loadable/component'
+//const Login = loadable(() => import('./components/Login/Login'))
+//import Login from './components/Login/Login'
 
 //once route components exist, lazy load them
 // requires component to be export default 
-//import like: const OtherComponent = React.lazy(() => import('./OtherComponent'));
+const Login = lazy(() => import('./components/Login/Login'));
 
 
 const App = () => {
   const [token, setToken] = useState('');
   console.log(token)
   if (!token) {
-    return <Login setToken={setToken} />
+    return <Suspense fallback={<div>Loading</div>}>{<Login setToken={setToken} />}</Suspense>
   }
   return (
     <div className="App">
@@ -30,7 +33,7 @@ const App = () => {
         <Routes>
           <Route path='/' element={<div>hi</div>} />
           Below you are seeing the terse route content, in actuality you should
-          {routes.map((route, index) => <Route key={`route-${route.title}-${index}`} path={route.path} element={route.component} />)}
+          {routes.map((route, index) => <Route key={`route-${route.title}-${index}`} path={route.path} element={<Suspense fallback={null}>{lazy(() => import(route.path))}</Suspense>} />)}
         </Routes>
       </main>
     </div>

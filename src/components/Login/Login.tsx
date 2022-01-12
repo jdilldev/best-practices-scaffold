@@ -10,7 +10,7 @@ import howdy from '../../lotties/howdy.json'
 
 type setTokenFunction = (val: string) => void
 
-const login = async (username: string, password: string) => {
+const loginFctn = async (username: string, password: string) => {
 
     return await axios.post('http://localhost:3333/login', { username: username, password: password })
         .then(data => { console.log(data); return data.data })
@@ -18,13 +18,14 @@ const login = async (username: string, password: string) => {
 
 }
 
-export const Login = ({ setToken }: { setToken: setTokenFunction }) => {
+
+const Login = ({ setToken }: { setToken: setTokenFunction }) => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
     const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault()
-        const token = await login(username, password)
+        const token = await loginFctn(username, password)
         setToken(token)
     }
 
@@ -55,9 +56,9 @@ export const Login = ({ setToken }: { setToken: setTokenFunction }) => {
                     <h1 className='maintext'>Login or Sign up</h1>
                     <h4 className='subtext'> I am not much of a designer, but I did my best! The internet is great for inspiration ♥︎</h4>
                 </section>
-
             </div>
-
         </div>
     )
 }
+
+export default Login

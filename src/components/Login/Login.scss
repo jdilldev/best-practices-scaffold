@@ -10,6 +10,7 @@
 			display: none;
 		}
 		.login__wrapper {
+			padding: 1em;
 			grid-area: login;
 			display: flex;
 			flex-direction: column;
@@ -66,6 +67,7 @@
 
 .login__wrapper > p {
 	color: gray;
+	text-align: center;
 }
 
 label {
@@ -81,6 +83,9 @@ input {
 
 input:focus {
 	border-bottom: 2px solid #90e16e;
+	border-bottom: 2px solid;
+	border-image-slice: 1;
+	border-image-source: linear-gradient(to left, #90e16e, rgb(43, 209, 197));
 }
 
 .login--image {
