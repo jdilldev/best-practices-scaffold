@@ -52,8 +52,8 @@ export const Login = ({ setToken }: { setToken: setTokenFunction }) => {
             </div>
             <div className='login--image'>
                 <section>
-                    <h1 className='maintext'>Hi there, I hope you like my login screen</h1>
-                    <h4 className='subtext'> I am not much of a designer, but I did my best! The internet is greatds for inspiration</h4>
+                    <h1 className='maintext'>Login or Sign up</h1>
+                    <h4 className='subtext'> I am not much of a designer, but I did my best! The internet is great for inspiration ♥︎</h4>
                 </section>
 
             </div>

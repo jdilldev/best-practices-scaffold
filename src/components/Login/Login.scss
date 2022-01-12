@@ -1,18 +1,67 @@
-.login__container {
-	display: grid;
-	grid-template-areas: "image login";
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr;
-	height: 100vh;
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&family=Delius&family=Klee+One&family=Neucha&family=Quicksand:wght@500&family=Shadows+Into+Light&family=Staatliches&family=The+Girl+Next+Door&family=Zen+Tokyo+Zoo&display=swap");
+
+@media only screen and (max-width: 749px) {
+	.login__container {
+		display: flex;
+		justify-content: center;
+		height: 100vh;
+		background-image: url("../../images/fluid-background.svg");
+		.login--image {
+			display: none;
+		}
+		.login__wrapper {
+			grid-area: login;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			background-color: transparent;
+		}
+	}
 }
 
-.login__wrapper {
-	grid-area: login;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	background-color: #28c8c034;
+@media screen and (min-width: 750px) {
+	.login__container {
+		display: grid;
+		grid-template-areas: "image login";
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+		height: 100vh;
+
+		.login__wrapper {
+			grid-area: login;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			background-color: #28c8c034;
+		}
+	}
+}
+
+@media screen and (min-width: 1300px) {
+	.login__container {
+		display: flex;
+		justify-content: center;
+		height: 100vh;
+		background-image: url("../../images/fluid-background.svg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		.login--image {
+			display: none;
+		}
+
+		.login__wrapper {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			background-color: #d3f4f2;
+			width: 40%;
+			margin: 6em 0;
+		}
+	}
 }
 
 .login__wrapper > p {
@@ -46,15 +95,19 @@ input:focus {
 	padding: 0 4em;
 
 	.maintext {
+		font-family: Staatliches;
+		color: white;
 		text-align: center;
 		font-weight: normal;
-		color: rgb(2, 51, 39);
+		font-size: 4em;
 	}
 
 	.subtext {
+		font-family: Quicksand;
 		text-align: center;
-		font-size: 1.2em;
+		font-size: 1.3em;
 		font-weight: lighter;
+		color: white;
 	}
 }
 
