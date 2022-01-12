@@ -31,7 +31,7 @@ export const Login = ({ setToken }: { setToken: setTokenFunction }) => {
     return (
         <div className={'login__container'}>
             <div className={'login__wrapper'}>
-                <form id={'login'} onSubmit={onSubmit}>
+                <form id={'login'} onSubmit={() => setToken('fake-token')}>
                     <Lottie options={{ animationData: howdy, autoplay: true, loop: true }} width={'100%'} height={200} />
                     <label style={{ width: '100%' }}>
                         <p>Username</p>
