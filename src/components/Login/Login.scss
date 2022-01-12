@@ -39,7 +39,7 @@
 	}
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1300px) and (min-height: 800px) {
 	.login__container {
 		display: flex;
 		justify-content: center;
@@ -59,7 +59,7 @@
 			align-items: center;
 			background-color: #d3f4f2;
 			width: 40%;
-			margin: 6em 0;
+			margin: 10em 0;
 		}
 	}
 }
