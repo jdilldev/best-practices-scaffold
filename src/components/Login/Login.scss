@@ -2,15 +2,19 @@
 
 @media only screen and (max-width: 749px) {
 	.login__container {
+		padding: 1em;
 		display: flex;
 		justify-content: center;
 		height: 100vh;
 		background-image: url("../../images/fluid-background.svg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
 		.login--image {
 			display: none;
 		}
 		.login__wrapper {
-			padding: 1em;
+			padding-top: 1em;
 			grid-area: login;
 			display: flex;
 			flex-direction: column;
