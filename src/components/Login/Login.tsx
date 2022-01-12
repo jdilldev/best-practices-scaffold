@@ -32,7 +32,7 @@ export const Login = ({ setToken }: { setToken: setTokenFunction }) => {
         <div className={'login__container'}>
             <div className={'login__wrapper'}>
                 <form id={'login'} onSubmit={() => setToken('fake-token')}>
-                    <Lottie options={{ animationData: howdy, autoplay: true, loop: true }} width={'100%'} height={200} />
+                    <Lottie options={{ animationData: howdy, autoplay: true, loop: true, }} style={{ stroke: 'white', strokeWidth: 10 }} width={'100%'} height={200} />
                     <label style={{ width: '100%' }}>
                         <p>Username</p>
                         <input className={'login--input'} type={'text'} onChange={(event) => setUsername(event.target.value)} />
