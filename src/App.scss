@@ -2,14 +2,13 @@
 	height: 100vh;
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: auto 1fr;
+	grid-template-rows: 50px 1fr;
 	grid-template-areas: "header" "main";
 }
 
 .App > header {
 	grid-area: header;
 	background-color: rgb(0, 124, 128);
-	padding: 1em 0;
 }
 
 .App > main {
@@ -22,11 +21,73 @@
 
 nav {
 	display: flex;
+}
+
+.menu-list {
+	display: flex;
 	justify-content: space-around;
+	width: 100%;
 	a {
 		color: whitesmoke;
 		text-decoration: none;
 		font-weight: bold;
 		font-size: 1.2em;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	nav > i {
+		width: 50%;
+	}
+	.menu-icon {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		padding: 1em;
+		color: white;
+	}
+	.menu-icon:hover {
+		animation: pulse 2s linear;
+	}
+	.menu-list {
+		animation: fade 0.5s linear forwards;
+	}
+}
+
+@media only screen and (min-width: 601px) {
+	.menu-icon {
+		display: none;
+	}
+	.menu-list {
+		visibility: visible;
+		animation: easy 0.5s linear;
+	}
+}
+
+@keyframes pulse {
+	0% {
+		color: rgba(0, 153, 255, 0.904);
+	}
+	100% {
+		color: #36ff68;
+	}
+}
+
+@keyframes easy {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fade {
+	from {
+		visibility: visible;
+	}
+	to {
+		opacity: 0;
+		visibility: hidden;
 	}
 }
