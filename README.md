@@ -1,4 +1,5 @@
 # Electron App/React App Scaffold
+https://jdilldev.github.io/best-practices-scaffold/
 
 This is boilerplate for a react app that can also be used as an electron application. I am particularaly pleased with the way I implemented hot reload functionality, as I am a champion for the developer experience (DX).
 
@@ -24,4 +25,4 @@ I will continue to add different features to it as an exercise, but it is pretty
 - try brotli out
 
 ![Screen Shot 2022-01-14 at 9 36 13 PM](https://user-images.githubusercontent.com/92639901/149605851-aeeed0a4-f6fb-4786-912e-b02f48baec46.png)
-https://jdilldev.github.io/best-practices-scaffold/
+
