@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/jdilldev/best-practices-scaffold/static/css/main.eb58a92d.css",
-    "main.js": "/jdilldev/best-practices-scaffold/static/js/main.e46aeb32.js",
-    "static/js/787.7259ada1.chunk.js": "/jdilldev/best-practices-scaffold/static/js/787.7259ada1.chunk.js",
-    "static/media/fluid-background.svg": "/jdilldev/best-practices-scaffold/static/media/fluid-background.c9ca57354097d270da9e.svg",
-    "index.html": "/jdilldev/best-practices-scaffold/index.html",
-    "main.eb58a92d.css.map": "/jdilldev/best-practices-scaffold/static/css/main.eb58a92d.css.map",
-    "main.e46aeb32.js.map": "/jdilldev/best-practices-scaffold/static/js/main.e46aeb32.js.map",
-    "787.7259ada1.chunk.js.map": "/jdilldev/best-practices-scaffold/static/js/787.7259ada1.chunk.js.map"
+    "main.css": "/best-practices-scaffold/static/css/main.b319e41e.css",
+    "main.js": "/best-practices-scaffold/static/js/main.89a0ecd4.js",
+    "static/js/787.7259ada1.chunk.js": "/best-practices-scaffold/static/js/787.7259ada1.chunk.js",
+    "static/media/fluid-background.svg": "/best-practices-scaffold/static/media/fluid-background.c9ca57354097d270da9e.svg",
+    "index.html": "/best-practices-scaffold/index.html",
+    "main.b319e41e.css.map": "/best-practices-scaffold/static/css/main.b319e41e.css.map",
+    "main.89a0ecd4.js.map": "/best-practices-scaffold/static/js/main.89a0ecd4.js.map",
+    "787.7259ada1.chunk.js.map": "/best-practices-scaffold/static/js/787.7259ada1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb58a92d.css",
-    "static/js/main.e46aeb32.js"
+    "static/css/main.b319e41e.css",
+    "static/js/main.89a0ecd4.js"
   ]
 }
