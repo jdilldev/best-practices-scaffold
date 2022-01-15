@@ -8,8 +8,8 @@ I wanted this to be a container of best practices, but without much content it w
 I will continue to add different features to it as an exercise, but it is pretty bare.
 
 ## To modify and run locally
-Clone the repo, and yarn install
-Each branch has only the dependencies it needs, so if you download routes, then switch to CSR-optimization, you will likely need to do a yarn install the first time in order to download the necessary packages.
+Clone the repo, and `yarn install`
+Each branch has only the dependencies it needs, so if you download routes, then switch to CSR-optimization, you will likely need to do a `yarn install` the first time in order to download the necessary packages.
 
 ## Features
 - react frontend
