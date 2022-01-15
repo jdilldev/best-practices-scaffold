@@ -7,10 +7,9 @@ import {
   Link
 } from "react-router-dom";
 import routes from './routes'
-import loadable from '@loadable/component'
 import { AiOutlineMenu } from 'react-icons/ai'
 
-const Login = React.lazy(() => import('./components/Login/Login'));//import Login from './components/Login/Login'
+import Login from './components/Login/Login'
 
 //once route components exist, lazy load them
 // requires component to be export default 
