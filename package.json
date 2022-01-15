@@ -2,6 +2,7 @@
   "name": "electron-scaffold",
   "version": "0.1.0",
   "private": false,
+  "homepage": " https://jdilldev.github.io/best-practices-scaffold/",
   "dependencies": {
     "@loadable/component": "^5.15.2",
     "@loadable/server": "^5.15.2",
@@ -38,7 +39,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "electron": "electron .",
-    "knit": "concurrently \"yarn start\" \"wait-on http://localhost:3000 && yarn electron\""
+    "knit": "concurrently \"yarn start\" \"wait-on http://localhost:3000 && yarn electron\"",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

@@ -8,6 +8,8 @@ import {
 } from "react-router-dom";
 import routes from './routes'
 import { AiOutlineMenu } from 'react-icons/ai'
+import logo from './logo.svg';
+import './App.scss';
 
 import Login from './components/Login/Login'
 
