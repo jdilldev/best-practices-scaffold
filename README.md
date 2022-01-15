@@ -6,6 +6,22 @@ I wanted this to be a container of best practices, but without much content it w
 
 I will continue to add different features to it as an exercise, but it is pretty bare.
 
+## Features
+- react frontend
+- electron app
+- fully responsive for mobile, tablet, and desktop viewports
+- animations for menu
+- authentication/login (dummy credentials)
+- routing
+- lazy loading
+
+## ToDos
+- server side rendering (with loadable components+node, next, or deno)
+- add data
+- make some API calls
+- add redux store
+
 However, once I do have something to build this will be a good starting point.
 
-![Screen Shot 2022-01-14 at 9 36 13 PM](https://user-images.githubusercontent.com/92639901/149605828-ebb97881-cabe-41de-ab0f-aac49c64ceca.png)
+
+![Screen Shot 2022-01-14 at 9 36 13 PM](https://user-images.githubusercontent.com/92639901/149605851-aeeed0a4-f6fb-4786-912e-b02f48baec46.png)
