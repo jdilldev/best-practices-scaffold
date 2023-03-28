@@ -1,7 +1,7 @@
 # Electron App/React App Scaffold
 https://jdilldev.github.io/best-practices-scaffold/
 
-This is boilerplate for a react app that can also be used as an electron application. I am particularaly pleased with the way I implemented hot reload functionality, as I am a champion for the developer experience (DX).
+This is boilerplate for a react app that can also be used as an electron application. I am particularaly pleased with the way I implemented hot reload functionality, as I am a champion for the developer experience (DX). (I followed this tutotiral: https://shivekkhurana.medium.com/a-gluten-free-electron-react-setup-ft-live-reload-f6e5bbbd964)
 
 I wanted this to be a container of best practices, but without much content it was kind of difficult to implement client and server side rendering because I hardly have any content to chunk/lazy load.
 
